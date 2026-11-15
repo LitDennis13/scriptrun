@@ -1,13 +1,7 @@
-#include "libraries/json.hpp"
+#ifndef MAIN_H
+#define MAIN_H
 
-#include <iostream>
-#include <fstream>
 #include <filesystem>
-#include <cstdlib>
-
-
-using json = nlohmann::json;
-
 
 
 namespace ScriptRun {
@@ -15,3 +9,5 @@ namespace ScriptRun {
     const std::filesystem::path SCRIPTS_FOLDER_PATH {"./scriptrun/scripts"};
     const std::filesystem::path BIND_JSON_FILE_PATH {"./scriptrun/bind.json"};
 }
+
+#endif // MAIN_H
